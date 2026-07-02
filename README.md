@@ -81,6 +81,23 @@ historical survey with no companion here.
   intruder genuinely deriving the victim's secret nonce — and shows the
   Needham-Schroeder-Lowe fix defeating the same attack.
 
+## Applications
+
+Original material (not extracted from the book) synthesizing the
+chapters above into practical tooling.
+
+- [Formal Methods for the Design-First Workflow](Formal%20Methods%20for%20the%20Design-First%20Workflow/Formal%20Methods%20for%20the%20Design-First%20Workflow.README.md):
+  ties Chapters 1–8 to the Design-First workflow (design.md →
+  requirements.md → tasks.md → implementation), for both software and
+  AI/agentic-system engineering. Implements EARS-requirement parsing and
+  translation to LTL acceptance criteria (Ch. 2/5), a requirement-conflict
+  checker (Ch. 6's normative-conflict analysis applied to SHALL/SHALL-NOT
+  requirements), and an architecture deadlock checker (Ch. 3's CSP
+  deadlock analysis applied to synchronous service/agent call graphs).
+  Demoed against a notification-system architecture and a multi-agent
+  tool-calling architecture, each with a verified, genuine bug caught
+  before implementation.
+
 ## Appendices
 
 - [Appendix A — Syntax of the Logics in this Book](Appendix%20A%20-%20Syntax%20of%20the%20Logics%20in%20this%20Book.md)
