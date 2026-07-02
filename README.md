@@ -15,6 +15,72 @@ and to support various forms of system analysis. International standards
 recognise and recommend the use of various Formal Methods. In practise,
 Formal Methods require tool support.
 
+## Chapters
+
+Companion notes and runnable Python code for each chapter, each verified
+against the book's own worked examples where the chapter's content is
+algorithmic. Chapter 9 ("Origins and Development of Formal Methods") is a
+historical survey with no companion here.
+
+- [Chapter 1 — Formal Methods](Formal%20Methods/Formal%20Methods.README.md):
+  what a Formal Method actually *is* — Definition 1's syntax/semantics/
+  method — worked through the chapter's own running case study, regular
+  expressions. The companion code implements a regex engine with both a
+  denotational semantics (language membership) and an operational
+  semantics (compilation to an automaton), verifies they agree, and
+  implements the chapter's formal "regular replacement," resolving a
+  real Word-vs-Emacs wildcard disagreement the chapter opens with.
+- [Chapter 2 — Logics for Software Engineering](Logics%20for%20Software%20Engineering/Logics%20for%20Software%20Engineering.README.md):
+  propositional logic, the institutions framework, first- and second-order
+  logic, and non-classical (modal/deontic/temporal) logics. The companion
+  code is a propositional-logic toolkit (parser, model checker, SAT/
+  validity checker) plus a small Kripke-model evaluator for multimodal
+  logic, demoed against the chapter's TV-quiz puzzle, car-configuration,
+  and web-graph examples.
+- [Chapter 3 — The Process Algebra CSP](The%20Process%20Algebra%20CSP/The%20Process%20Algebra%20CSP.README.md):
+  CSP syntax, operational and denotational semantics, refinement, and
+  deadlock/livelock analysis. The companion code is a bounded-depth CSP
+  engine (process AST, firing-rule transitions, a traces model, deadlock
+  and refinement checks), demoed against the chapter's ATM, buffer, and
+  bistro-deadlock examples, plus a simulation of the Dining Philosophers-
+  style Children's Puzzle.
+- [Chapter 4 — Algebraic Specification in CASL](Algebraic%20Specification%20in%20CASL/Algebraic%20Specification%20in%20CASL.README.md):
+  CASL signatures/axioms, loose model semantics, consistency checking,
+  ladder-logic program verification, and CASL's structuring operators.
+  The companion code is a reference Telephone Database implementation
+  with a ConGu-style random axiom checker (catches both implementation
+  and specification bugs), plus a Pelican Crossing ladder-logic automaton
+  with reachability and inductive verification.
+- [Chapter 5 — Specification-Based Testing](Specification-Based%20Testing/Specification-Based%20Testing.README.md):
+  state-based test generation and coverage criteria, LTL runtime
+  monitoring, Tretmans' `ioco` conformance theory, and Gaudel's
+  ground-instance testing from algebraic specifications. The companion
+  code reproduces the book's own VCR-switch test suite exactly, an LTL
+  test oracle, an `ioco` conformance checker matching the book's stated
+  results, and a days-in-month test suite that catches a real leap-year
+  bug with a 125x-reduced test suite.
+- [Chapter 6 — Specification and Verification of Normative Documents](Specification%20and%20Verification%20of%20Normative%20Documents/Specification%20and%20Verification%20of%20Normative%20Documents.README.md):
+  the contract language `CL` (obligations/prohibitions/permissions with
+  reparations) and Definition 1's four kinds of normative conflict. The
+  companion code implements a residual-contract semantics and conflict
+  checker, verified against all four conflict cases and against the
+  book's own cautionary example of a *spurious* conflict caused by
+  abstracting away time.
+- [Chapter 7 — Formal Methods for Human-Computer Interaction](Formal%20Methods%20for%20Human-Computer%20Interaction/Formal%20Methods%20for%20Human-Computer%20Interaction.README.md):
+  short-term memory and closure, automatic vs. deliberate cognitive
+  control, and LTL model checking of interactive systems. The companion
+  code mechanically reproduces the chapter's central example: the classic
+  ATM "forgotten card" post-completion error emerges from one interface
+  design and not another, purely as a side effect of the closure
+  mechanism.
+- [Chapter 8 — Formal Verification of Security Protocols](Formal%20Verification%20of%20Security%20Protocols/Formal%20Verification%20of%20Security%20Protocols.README.md):
+  the Dolev-Yao intruder model, the Needham-Schroeder protocol, and
+  rank-function correctness proofs. The companion code implements a
+  message algebra and mechanically replays Gavin Lowe's man-in-the-middle
+  attack step by step — confirmed by running it, which shows the
+  intruder genuinely deriving the victim's secret nonce — and shows the
+  Needham-Schroeder-Lowe fix defeating the same attack.
+
 ## Appendices
 
 - [Appendix A — Syntax of the Logics in this Book](Appendix%20A%20-%20Syntax%20of%20the%20Logics%20in%20this%20Book.md)
