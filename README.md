@@ -1,6 +1,20 @@
 # Formal-Methods-for-Software-Engineering
 Languages, Methods, Application Domains
 
+Let's begin with an understanding of the key ingredients of Formal Methods: 
+* syntax, 
+* semantics 
+* method
+
+The syntax is usually given in Backus–Naur-Form; the semantics is mostly presented in either operational,
+denotational, or axiomatic style; the method says how to work with the language.
+
+Formal Methods are useful in classical as well as in agile software
+development processes. They are used to achieve precision in design documents
+and to support various forms of system analysis. International standards
+recognise and recommend the use of various Formal Methods. In practise,
+Formal Methods require tool support.
+
 ## Appendices
 
 - [Appendix A — Syntax of the Logics in this Book](Appendix%20A%20-%20Syntax%20of%20the%20Logics%20in%20this%20Book.md)
